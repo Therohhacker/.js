@@ -1,0 +1,110 @@
+<HTML>
+ <HEAD>
+  <TITLE> Mouse Event</TITLE>
+  <script>
+
+  //click event function.
+  function clickme(){
+	var heding = document.getElementById('head');
+	var div = document.getElementById('d1');
+
+	if(heding.style.color=="black")
+	{
+		heding.style.color="red";
+		div.style.border=" 2px solid red";
+	}
+	else{
+		heding.style.color="black";
+		div.style.border="none";
+	}
+  }
+	
+  //mouseout event function
+  function clickme1()
+  {
+	var heading1 = document.getElementById('head1');
+	if(heading1.style.color=="black")
+	{
+		heading1.style.color="red";
+	}
+	else{
+		heading1.style.color="black";
+	}
+  }
+   
+   //onblur event function
+   function clickme2()
+  {
+	var heading2 = document.getElementById('head2').innerHtml;
+	heading.toUpperCase();
+  }
+
+   //double click event function 
+  function clickme3()
+  {
+	var heading3 = document.getElementById('head3');
+	
+	console.log("clicked");
+
+	if( heading3.style.color=="black")
+	{
+		heading3.style.color="orange";
+
+	}
+	else{
+		heading3.style.color="black";
+	}
+  }
+
+  //onMouseOver Event Function.
+  function clickme4()
+  {
+	var heading4 = document.getElementById('head4');
+	
+	console.log("clicked");
+
+	if( heading4.style.color=="black")
+	{
+		heading4.style.color="green";
+	}
+	else{
+		heading4.style.color="black";
+	}
+  }
+  </script>
+ </HEAD>
+
+ <BODY>
+   <h1 style="text-align:center"> Javascript Mouse Events</h1>	
+   <hr>
+  <div style="text-align:center; width:500px; background-color:gray; margin-left:600px;">
+  <hr>
+  <div id="d1">
+  <h3> click event</h3>
+  <h1 id="head"> click to fire this event</h1>
+  <button onclick="clickme()" id="btn">clickme</button>
+  </div>
+   <hr>
+
+  <h3>mouseout event</h3>
+  <h1 id="head1"> Mouse Event In Javascript</h1>
+  <button onmouseout="clickme1()" id="btn1">clickme</button>
+  <hr>
+
+  <h3>mouse on blur event</h3>
+  <h1 id="head2"> Mouse Event In Javascript</h1>
+  <button onBlur="clickme2()" id="btn2">clickme</button>
+  <hr>
+
+  <h3>double click event</h3>
+  <h1 id="head3"> Mouse Event In Javascript</h1>
+  <button ondblclick="clickme3()" id="btn3">clickme</button>
+  <hr>
+
+  <h3>mouseover event</h3>
+  <h1 id="head4"> Mouse Event In Javascript</h1>
+  <button onmouseover="clickme4()" id="btn4">clickme</button>
+  <hr>
+  </div>
+ </BODY>
+</HTML>
